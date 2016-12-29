@@ -1,0 +1,13 @@
+{
+  "name": "elm-lang.org-clone",
+  "version": "1.0.0",
+  "description": "Clone of elm-lang.org",
+  "main": "index.js",
+  "repository": "https://github.com/marksauter/elm-lang.org-clone",
+  "author": "Mark Sauter",
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
