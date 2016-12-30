@@ -11,11 +11,11 @@ node_js:
 
 env:
   matrix:
-    - ELM_VERSION=0.18.0-beta ELM_TEST_VERSION=^0.18.2
+    - ELM_VERSION=0.18.0 ELM_TEST_VERSION=^0.18.2
     
 install:
-  - npm install -g elm@ELM_VERSION
-  - npm install -g elm-test@ELM_TEST_VERSION
+  - npm install -g elm@$ELM_VERSION
+  - npm install -g elm-test@$ELM_TEST_VERSION
 
 script:
   - elm-test
