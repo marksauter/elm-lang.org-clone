@@ -10,8 +10,9 @@ node_js:
   - "node"
 
 env:
-  matrix:
-    - ELM_VERSION=0.18.0 ELM_TEST_VERSION=^0.18.2
+  global:
+    - ELM_VERSION=0.18.0 
+    - ELM_TEST_VERSION=^0.18.2
     
 install:
   - npm install -g elm@$ELM_VERSION
