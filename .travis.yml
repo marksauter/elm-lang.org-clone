@@ -1,7 +1,10 @@
+sudo: false
+
 language: node_js
 
 os:
-  - windows
+  - linux
+  - osx
 
 node_js:
   - "node"
@@ -14,8 +17,6 @@ env:
 install:
   - npm install -g elm@ELM_VERSION
   - npm install -g elm-test@ELM_TEST_VERSION
-  - elm-package install -y
-  - pushd tests && elm-package install -y && popd
 
 script:
   - elm-test
