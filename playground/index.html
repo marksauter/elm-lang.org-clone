@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="spelling"></div>
+  <script src="spelling.js"></script>
+  <script>
+      var app = Elm.Spelling.fullscreen();
+      app.ports.check.subscribe(function(word) {
+          var suggestions = spellCheck(word);
+          app.ports.suggestions.send(suggestions);
+      });
+      function spellCheck(word) {
+          return ['suggestion'];
+      }
+  </script>
+</body>
+</html>
