@@ -8,7 +8,7 @@ import String
 
 all : Test
 all =
-    describe "Sample Test Suite"
+    describe "Sample Test Suite!"
         [ describe "Unit test examples"
             [ test "Addition" <|
                 \() ->
