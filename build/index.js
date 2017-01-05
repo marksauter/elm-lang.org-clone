@@ -93,7 +93,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\r\n  background: white;\r\n  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;\r\n}\r\nhtml, head, body {\r\n  margin: 0;\r\n}\r\n.site-root {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n  -webkit-box-pack: justify;\r\n      -ms-flex-pack: justify;\r\n          justify-content: space-between;\r\n  box-sizing: border-box;\r\n  margin: 0;\r\n}\r\n.site-header {\r\n  color: #000;\r\n  background: #60B5CC;\r\n}\r\n#site-header__logo {\r\n  position: absolute;\r\n  left: 1em;\r\n  top: 1em;\r\n}\r\n.site-header__nav {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n.site-header__nav a {\r\n  text-decoration: none;\r\n  color: #34495E;\r\n  font-size: 20px;\r\n}\r\n.site-header__nav a:hover {\r\n  text-decoration: underline;\r\n}\r\n.site-header__nav ul {\r\n  list-style: none;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -ms-flex-flow: row wrap;\r\n      flex-flow: row wrap;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n  margin: 0;\r\n  padding: 1em;\r\n}\r\n.site-header__nav li {\r\n  margin: 0 1em;\r\n}\r\n/*.site-header__logo {\r\n  margin-right: auto;\r\n  box-sizing: border-box;\r\n  padding: 10px 10px 0;\r\n}*/\r\n.site-header__nav > #examples {\r\n  margin-left: auto;\r\n}\r\n.site-header__nav > #blog {\r\n  margin-right: auto;\r\n}\r\n.main-splash {\r\n  background: #60B5CC;\r\n  padding: 1em;\r\n  color: white;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -ms-flex-flow: column;\r\n      flex-flow: column;\r\n}\r\n.main-content{\r\n  background: #F7CE2B;\r\n  min-height: 40vh;\r\n  padding: 10px;\r\n}\r\n.site-footer{\r\n  background: #ABC999;\r\n  padding: 10px;\r\n  -webkit-box-ordinal-group: 2;\r\n      -ms-flex-order: 1;\r\n          order: 1;\r\n}\r\n\r\n", ""]);
+	exports.push([module.id, "body {\r\n  background: white;\r\n  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;  \r\n  margin: 0;\r\n  font-size: 20px;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n}\r\n\r\n.site-root {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n      -ms-flex-direction: column;\r\n          flex-direction: column;\r\n  -webkit-box-pack: justify;\r\n      -ms-flex-pack: justify;\r\n          justify-content: space-between;\r\n  box-sizing: border-box;\r\n  margin: 0;\r\n}\r\n\r\n.site-header {\r\n  color: #000;\r\n  background: #60B5CC;\r\n}\r\n\r\n#site-header__logo {\r\n  position: absolute;\r\n  left: 1em;\r\n  top: 1em;\r\n}\r\n\r\n.site-header__nav {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.site-header__nav a {\r\n  text-decoration: none;\r\n  color: #34495E;\r\n  font-size: 1em;\r\n  padding-bottom: 13px;\r\n  margin: 0 1.5em;\r\n}\r\n\r\n.site-header__nav a:hover,\r\n.site-header__nav a.current {\r\n  text-decoration: none;\r\n  color: #34495E;\r\n  border-bottom: 3px solid #34495E;\r\n}\r\n\r\n.site-header__nav ul {\r\n  list-style: none;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -ms-flex-flow: row wrap;\r\n      flex-flow: row wrap;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n  margin: 0;\r\n  padding: 1em;\r\n}\r\n\r\n.splash {\r\n  background: #60B5CC;\r\n  color: white;\r\n  padding: 1em;\r\n  text-align: center;\r\n}\r\n\r\n#main-splash {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -ms-flex-flow: column;\r\n      flex-flow: column;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n}\r\n\r\n.splash .title {\r\n  font-size: 6em;\r\n  padding: 16px 0px;\r\n  /*margin: inherit;*/\r\n}\r\n\r\n.splash .subtitle {\r\n  font-size: 1.25em;\r\n  padding: 8px 0px;\r\n}\r\n\r\n.splash .subtext {\r\n  font-size: 0.75em;\r\n  padding: 8px 0px;\r\n}\r\n\r\n.splash .links {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -ms-flex-flow: row wrap;\r\n      flex-flow: row wrap;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\r\n}\r\n\r\n.splash a {\r\n  background: #34495E;\r\n  border-radius: 6px;\r\n  -webkit-box-flex: 0;\r\n      -ms-flex: 0 120px;\r\n          flex: 0 120px;\r\n  padding: 12px;\r\n  margin: 12px;\r\n  color: white;\r\n  font-size: 1.2em;\r\n}\r\n\r\n.splash a:hover {\r\n  background: #20374D;\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n\r\n.main-content{\r\n  background: #F7CE2B;\r\n  min-height: 40vh;\r\n  padding: 10px;\r\n}\r\n\r\n.site-footer{\r\n  background: #ABC999;\r\n  padding: 10px;\r\n  -webkit-box-ordinal-group: 2;\r\n      -ms-flex-order: 1;\r\n          order: 1;\r\n}\r\n\r\n", ""]);
 	
 	// exports
 
@@ -8604,8 +8604,12 @@
 		_elm_lang$html$Html$div,
 		{
 			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$class('main-splash'),
-			_1: {ctor: '[]'}
+			_0: _elm_lang$html$Html_Attributes$class('splash'),
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$id('main-splash'),
+				_1: {ctor: '[]'}
+			}
 		},
 		{
 			ctor: '::',
@@ -8613,7 +8617,7 @@
 				_elm_lang$html$Html$div,
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$id('main-title'),
+					_0: _elm_lang$html$Html_Attributes$class('title'),
 					_1: {ctor: '[]'}
 				},
 				{
@@ -8627,11 +8631,71 @@
 					_elm_lang$html$Html$div,
 					{
 						ctor: '::',
-						_0: _elm_lang$html$Html_Attributes$id('main-sub'),
+						_0: _elm_lang$html$Html_Attributes$class('subtitle'),
 						_1: {ctor: '[]'}
 					},
-					{ctor: '[]'}),
-				_1: {ctor: '[]'}
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html$text('A delightful language for reliable webapps.'),
+						_1: {ctor: '[]'}
+					}),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('subtext'),
+							_1: {ctor: '[]'}
+						},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('Generate with great performance and no runtime exceptions.'),
+							_1: {ctor: '[]'}
+						}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$div,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('links'),
+								_1: {ctor: '[]'}
+							},
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$a,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$href('/try'),
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Try Online'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$a,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$href('http://guide.elm-lang.org/install.html'),
+											_1: {ctor: '[]'}
+										},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('Install'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								}
+							}),
+						_1: {ctor: '[]'}
+					}
+				}
 			}
 		});
 	var _user$project$Main$navLink = function (link) {
@@ -8737,8 +8801,12 @@
 						_elm_lang$html$Html$a,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$href(_user$project$Main$root),
-							_1: {ctor: '[]'}
+							_0: _elm_lang$html$Html_Attributes$class('tab'),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$href(_user$project$Main$root),
+								_1: {ctor: '[]'}
+							}
 						},
 						{
 							ctor: '::',
@@ -8772,7 +8840,7 @@
 			_elm_lang$html$Html$div,
 			{
 				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$class('home-root'),
+				_0: _elm_lang$html$Html_Attributes$id('home-root'),
 				_1: {ctor: '[]'}
 			},
 			{

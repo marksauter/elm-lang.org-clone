@@ -58,7 +58,7 @@ subscriptions model =
 
 view : Model -> Html Msg
 view model =
-  div [ class "home-root" ]
+  div [ id "home-root" ]
     [ myHeader
     , mySplash
     , myMain
@@ -69,7 +69,7 @@ myHeader : Html msg
 myHeader =
   header [ id "site-header", class "site-header" ]
     [ div [ id "site-header__logo" ]
-      [ a [ href root] [ logo ] ]
+      [ a [ class "tab", href root] [ logo ] ]
     , nav [ class "site-header__nav" ]
       [ ul [] navLinks ]
     ]
@@ -98,10 +98,16 @@ navLink link =
 
 mySplash : Html msg
 mySplash =
-  div [ class "main-splash" ] 
-    [ div [ id "main-title" ]
-      [ text "elm" ]
-    , div [ id "main-sub"] []
+  div [ class "splash", id "main-splash" ] 
+    [ div [ class "title" ] [ text "elm" ]
+    , div [ class "subtitle" ] [ text "A delightful language for reliable webapps." ]
+    , div [ class "subtext" ] [ text "Generate with great performance and no runtime exceptions." ]
+    , div [ class "links" ]
+      [ a [ href "#" ]
+        [ text "Try Online" ]
+      , a [ href "http://guide.elm-lang.org/install.html" ]
+        [ text "Install" ]
+      ]
     ]
 
 

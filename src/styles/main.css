@@ -1,9 +1,12 @@
 body {
   background: white;
-  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
-}
-html, head, body {
+  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;  
   margin: 0;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .site-root {
@@ -33,11 +36,16 @@ html, head, body {
 .site-header__nav a {
   text-decoration: none;
   color: #34495E;
-  font-size: 20px;
+  font-size: 1em;
+  padding-bottom: 13px;
+  margin: 0 1.5em;
 }
 
-.site-header__nav a:hover {
-  text-decoration: underline;
+.site-header__nav a:hover,
+.site-header__nav a.current {
+  text-decoration: none;
+  color: #34495E;
+  border-bottom: 3px solid #34495E;
 }
 
 .site-header__nav ul {
@@ -49,30 +57,55 @@ html, head, body {
   padding: 1em;
 }
 
-.site-header__nav li {
-  margin: 0 1em;
-}
-
-/*.site-header__logo {
-  margin-right: auto;
-  box-sizing: border-box;
-  padding: 10px 10px 0;
-}*/
-
-.site-header__nav > #examples {
-  margin-left: auto;
-}
-
-.site-header__nav > #blog {
-  margin-right: auto;
-}
-
-.main-splash {
+.splash {
   background: #60B5CC;
-  padding: 1em;
   color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+#main-splash {
   display: flex;
   flex-flow: column;
+  justify-content: center;
+}
+
+.splash .title {
+  font-size: 6em;
+  padding: 16px 0px;
+  /*margin: inherit;*/
+}
+
+.splash .subtitle {
+  font-size: 1.25em;
+  padding: 8px 0px;
+}
+
+.splash .subtext {
+  font-size: 0.75em;
+  padding: 8px 0px;
+}
+
+.splash .links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.splash a {
+  background: #34495E;
+  border-radius: 6px;
+  flex: 0 120px;
+  padding: 12px;
+  margin: 12px;
+  color: white;
+  font-size: 1.2em;
+}
+
+.splash a:hover {
+  background: #20374D;
+  color: white;
+  text-decoration: none;
 }
 
 .main-content{

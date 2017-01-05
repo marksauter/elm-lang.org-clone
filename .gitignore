@@ -3,4 +3,6 @@ elm-stuff/
 # elm-repl generated files
 repl-temp-*
 # yarn generated files
-node_modules
+node_modules/
+# webpack generated files
+build/
