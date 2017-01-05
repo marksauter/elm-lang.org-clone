@@ -6,3 +6,5 @@ repl-temp-*
 node_modules/
 # webpack generated files
 build/
+# playground files
+playground/
