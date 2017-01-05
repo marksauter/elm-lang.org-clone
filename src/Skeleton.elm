@@ -29,7 +29,7 @@ header name =
         , "top" => "1em"
         ]
       ]
-      [ img [ src "/assets/logo.svg", style [ "width" => "24px" ] ] []
+      [ img [ src "./assets/logo.svg", style [ "width" => "24px" ] ] []
       ]
     , ul []  (List.map (tab name) [ "examples", "docs", "community", "blog" ])
     ]

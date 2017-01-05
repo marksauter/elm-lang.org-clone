@@ -1,0 +1,89 @@
+body {
+  background: white;
+  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+}
+html, head, body {
+  margin: 0;
+}
+
+.site-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.site-header {
+  color: #000;
+  background: #60B5CC;
+}
+
+#site-header__logo {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+}
+
+.site-header__nav {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header__nav a {
+  text-decoration: none;
+  color: #34495E;
+  font-size: 20px;
+}
+
+.site-header__nav a:hover {
+  text-decoration: underline;
+}
+
+.site-header__nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 1em;
+}
+
+.site-header__nav li {
+  margin: 0 1em;
+}
+
+/*.site-header__logo {
+  margin-right: auto;
+  box-sizing: border-box;
+  padding: 10px 10px 0;
+}*/
+
+.site-header__nav > #examples {
+  margin-left: auto;
+}
+
+.site-header__nav > #blog {
+  margin-right: auto;
+}
+
+.main-splash {
+  background: #60B5CC;
+  padding: 1em;
+  color: white;
+  display: flex;
+  flex-flow: column;
+}
+
+.main-content{
+  background: #F7CE2B;
+  min-height: 40vh;
+  padding: 10px;
+}
+
+.site-footer{
+  background: #ABC999;
+  padding: 10px;
+  order: 1;
+}
+

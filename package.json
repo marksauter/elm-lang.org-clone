@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Clone of elm-lang.org",
   "scripts": {
-    "clean": "rimraf build",
-    "build:webpack": "webpack --config webpack.config.prod.js",
-    "build": "yarn run clean && yarn run build:webpack",
+    "build": "cross-env NODE_ENV=production webpack",
     "watch": "webpack --watch",
     "dev": "webpack-dev-server --port 3000",
     "test": "elm-test"
@@ -15,9 +13,17 @@
   "author": "Mark Sauter",
   "license": "MIT",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.14",
+    "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^3.1.3",
+    "css-loader": "^0.26.1",
+    "elm-hot-loader": "^0.5.4",
     "elm-webpack-loader": "^4.1.1",
-    "rimraf": "^2.5.4",
+    "file-loader": "^0.9.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.0.0",
+    "postcss-loader": "^1.2.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }
