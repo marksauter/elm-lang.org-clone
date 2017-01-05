@@ -115,8 +115,17 @@ a {
 }
 
 .site-footer{
-  background: #ABC999;
-  padding: 10px;
-  order: 1;
+  text-align: center;
+  margin-top: 5em;
+  border-top: 1px solid #eee;
+  color: #bbb;
+  padding: 1.6em 0;
+  font-size: 0.75em;
+}
+
+.site-footer a {
+  color: #bbb;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
